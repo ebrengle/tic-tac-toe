@@ -11,20 +11,25 @@ html(lang='en-US')
 
       .container
         h1 Tic - Tac - Toe
+
+        form.newplayer
+          input(type='text' placeholder='Player Name')
+          button(type='submit' value='Play Game') Play Game 
+
         .game-wrapper
           table
             tr
-              td.A1
-              td.A2
-              td.A3
+              td#A1
+              td#A2
+              td#A3
             tr
-              td.B1
-              td.B2
-              td.B3
+              td#B1
+              td#B2
+              td#B3
             tr
-              td.C1
-              td.C2
-              td.C3
+              td#C1
+              td#C2
+              td#C3
         .span
 
 
