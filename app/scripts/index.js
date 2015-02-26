@@ -2,7 +2,8 @@
 //Firebase URL
 //var fb = new Firebase('https://tic-tac-toe-app.firebaseio.com/');
 var firstPlayer,
-    secondPlayer;
+    secondPlayer,
+    playerName;
 
 //Set first player to X
 var currentPlayer = "X";
@@ -21,5 +22,25 @@ $('td').on('click', function(event){
     $(this).append( currentPlayer );
     $(this).unbind("click");
     changePlayer();
+    console.log($(this).index(), $(this).closest('tr').index());
     event.preventDefault();
 });
+
+
+//Create player 1 (x) and player 2 (o)
+$('#submit-player').on('click', function(event){
+  event.preventDefault();
+  playerName = $('.playerName').val();
+  assignPlayer();
+  console.log(firstPlayer);
+  console.log(secondPlayer);
+});
+
+//Function to check the status of firstPlayer & secondPlayer
+function assignPlayer() {
+  if (firstPlayer === undefined) {
+    firstPlayer = playerName;
+    } else {
+    secondPlayer = playerName;
+  }
+};
