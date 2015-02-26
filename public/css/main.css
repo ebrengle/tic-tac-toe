@@ -4827,7 +4827,8 @@ body {
   text-shadow: -1px -1px #333;
   background: #333; }
   body h1 {
-    font-weight: normal; }
+    font-weight: normal;
+    color: #FFF; }
   body .turn {
     margin-bottom: 10px; }
   body table {
@@ -4839,15 +4840,6 @@ body {
       height: 100px;
       border: 1px solid #555;
       cursor: pointer; }
-      body table td:before {
-        font-size: 1.5em;
-        line-height: 1; }
-      body table td.cross:before {
-        content: "x";
-        color: lightblue; }
-      body table td.circle:before {
-        content: "o";
-        color: pink; }
   body .reset {
     background: #555;
     border: 1px solid #333;
@@ -4858,3 +4850,6 @@ body {
     text-transform: uppercase; }
     body .reset:hover {
       opacity: 0.8; }
+
+input, button {
+  color: #000; }

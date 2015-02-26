@@ -1,6 +1,8 @@
 'use strict';
 //Firebase URL
 //var fb = new Firebase('https://tic-tac-toe-app.firebaseio.com/');
+var firstPlayer,
+    secondPlayer;
 
 //Set first player to X
 var currentPlayer = "X";
